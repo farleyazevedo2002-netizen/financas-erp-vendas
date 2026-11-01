@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Finanças ERP — Controle financeiro para CPF e CNPJ</title>
+<meta name="description" content="Sistema de finanças pessoais e empresariais no seu próprio Google Drive. Pagamento único, sem mensalidade.">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><div class="w"><b>Finanças ERP</b><nav><a href="#telas">Telas</a><a href="#recursos">Recursos</a><a href="#comprar">Comprar</a><a href="#faq">Dúvidas</a></nav></div></header>
+<main>
+<div class="w hero"><h1>Controle financeiro completo para sua vida pessoal e sua empresa</h1>
+<p>Lançamentos, cartões com fatura, contas, orçamento, relatórios e índices de saúde financeira. Seus dados ficam no <b>seu</b> Google Drive.</p>
+<a class="btn" href="#comprar">Quero o Finanças ERP</a></div>
+
+<section id="telas"><div class="w"><h2>Conheça o sistema</h2><div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+<figure><img src="img/painel.png" alt="Tela inicial com saldo, avisos e próximos vencimentos" loading="lazy"><figcaption>Tela inicial</figcaption></figure>
+<figure><img src="img/lancamentos.png" alt="Extrato com filtros por mês e status" loading="lazy"><figcaption>Extrato</figcaption></figure>
+<figure><img src="img/dashboard.png" alt="Dashboard com gráficos de receitas e despesas" loading="lazy"><figcaption>Dashboard</figcaption></figure>
+</div></div></section>
+
+<section id="recursos"><div class="w"><h2>O que você ganha</h2><div class="grid">
+<div class="card"><h3>CPF e CNPJ juntos</h3><p>Separe o que é pessoal (PF) e da empresa (PJ) no mesmo sistema.</p></div>
+<div class="card"><h3>Cartões e parcelas</h3><p>A compra cai na fatura certa, com fechamento, vencimento e parcelamento automáticos.</p></div>
+<div class="card"><h3>Contas e transferências</h3><p>Saldos, pró-labore, distribuição de lucros e pagamento de fatura.</p></div>
+<div class="card"><h3>Orçamento por categoria</h3><p>Defina limites e acompanhe o quanto já gastou em cada categoria.</p></div>
+<div class="card"><h3>Índices financeiros</h3><p>Poupança, reserva, endividamento e outros indicadores com metas editáveis.</p></div>
+<div class="card"><h3>Comprovantes e importação</h3><p>Anexe fotos ou PDFs e importe planilhas CSV/XLSX.</p></div>
+<div class="card"><h3>Backup automático</h3><p>Cópias semanais no seu Drive, sem você precisar lembrar.</p></div>
+<div class="card"><h3>Privacidade</h3><p>Nós não temos acesso à sua planilha: ela é criada na sua conta Google.</p></div>
+</div></div></section>
+
+<section><div class="w"><h2>Como funciona</h2><div class="grid">
+<div class="card"><span class="num">1</span><h3>Compre</h3><p>Pague com Pix ou cartão (até 12x) pelo Mercado Pago.</p></div>
+<div class="card"><span class="num">2</span><h3>Receba a chave</h3><p>Após a aprovação, a chave de ativação chega no seu e-mail.</p></div>
+<div class="card"><span class="num">3</span><h3>Ative e use</h3><p>Entre com o Gmail da compra, informe a chave e comece.</p></div>
+</div></div></section>
+
+<section id="comprar"><div class="w"><h2>Pagamento único</h2>
+<div class="card preco"><div class="v">R$ 150,00</div><p class="mut" style="color:var(--mut)">Licença permanente, sem mensalidade</p>
+<ul><li>Acesso ao sistema completo</li><li>Atualizações da versão</li><li>Ativação vinculada ao seu Gmail</li></ul>
+<form id="f"><input id="nome" placeholder="Seu nome" required autocomplete="name">
+<input id="email" type="email" placeholder="Seu Gmail (o mesmo que usará no sistema)" required autocomplete="email">
+<label style="display:flex;gap:8px;text-align:left;font-size:13px;color:var(--mut);margin:8px 0"><input id="ok" type="checkbox" required style="width:auto;margin:3px 0">Li e aceito os <a href="termos.html" target="_blank">Termos</a> e a <a href="privacidade.html" target="_blank">Privacidade</a>.</label>
+<button class="btn" id="b" style="width:100%">Pagar com Mercado Pago</button><div id="msg" role="status"></div></form></div></div></section>
+
+<section id="faq"><div class="w" style="max-width:760px"><h2>Dúvidas frequentes</h2>
+<details><summary>Preciso pagar mensalidade?</summary><p>Não. O pagamento é único.</p></details>
+<details><summary>Onde ficam meus dados?</summary><p>Em uma planilha criada no seu próprio Google Drive. Só você tem acesso.</p></details>
+<details><summary>Funciona no celular?</summary><p>Sim, o sistema é adaptado para celular e computador.</p></details>
+<details><summary>Posso usar outro Gmail?</summary><p>A licença é vinculada ao Gmail informado na compra. Para trocar, fale com o suporte.</p></details>
+<details><summary>Posso pedir reembolso?</summary><p>Sim, dentro do prazo legal de 7 dias após a compra. Veja os Termos.</p></details></div></section>
+</main>
+<footer><div class="w"><a href="termos.html">Termos de uso</a><a href="privacidade.html">Privacidade</a><br>Suporte: <span id="ct"></span><br>© <span id="ano"></span> Finanças ERP</div></footer>
+<script src="config.js"></script>
+<script>
+document.getElementById('ano').textContent=new Date().getFullYear();
+document.getElementById('ct').textContent=CONFIG.CONTATO;
+var f=document.getElementById('f'),m=document.getElementById('msg'),b=document.getElementById('b');
+f.addEventListener('submit',function(e){
+ e.preventDefault();
+ if(/COLE_AQUI/.test(CONFIG.VENDAS_URL)){m.className='erro';m.textContent='Loja ainda não configurada (config.js).';return}
+ var email=document.getElementById('email').value.trim().toLowerCase();
+ if(!/@gmail\.com$/.test(email)){m.className='erro';m.textContent='Use um e-mail @gmail.com.';return}
+ b.disabled=true;b.textContent='Criando checkout…';m.className='';m.textContent='';
+ fetch(CONFIG.VENDAS_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},
+  body:JSON.stringify({acao:'criarCheckout',nome:document.getElementById('nome').value.trim(),email:email})})
+ .then(function(r){return r.json()})
+ .then(function(r){var u=r&&(r.init_point||r.url);if(!u)throw new Error(r&&r.mensagem||'Não foi possível criar o checkout.');location.href=u})
+ .catch(function(err){m.className='erro';m.textContent=err.message;b.disabled=false;b.textContent='Pagar com Mercado Pago'});
+});
+</script></body></html>
