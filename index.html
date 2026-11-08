@@ -2,50 +2,102 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Finanças ERP — Controle financeiro para CPF e CNPJ</title>
 <meta name="description" content="Sistema de finanças pessoais e empresariais no seu próprio Google Drive. Pagamento único, sem mensalidade.">
-<link rel="stylesheet" href="style.css"></head><body>
-<header><div class="w"><b>Finanças ERP</b><nav><a href="#telas">Telas</a><a href="#recursos">Recursos</a><a href="#comprar">Comprar</a><a href="#faq">Dúvidas</a></nav></div></header>
+<meta name="theme-color" content="#4F46E5">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.className='js'</script></head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-ok" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></g></symbol>
+<symbol id="i-emp" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V6l8-3 8 3v15M9 21v-4h6v4M8.5 9h.01M12 9h.01M15.5 9h.01M8.5 13h.01M12 13h.01M15.5 13h.01"/></g></symbol>
+<symbol id="i-card" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5zM3 10h18M7 15h3"/></g></symbol>
+<symbol id="i-transf" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h13l-4-4M17 17H4l4 4"/></g></symbol>
+<symbol id="i-tag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8zM7.5 8h.01"/></g></symbol>
+<symbol id="i-gauge" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15l3.5-4.5M3.6 17a9 9 0 1 1 16.8 0"/></g></symbol>
+<symbol id="i-clip" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.5l-8.2 8.2a5 5 0 0 1-7.1-7.1l8.2-8.2a3.3 3.3 0 0 1 4.7 4.7l-8.2 8.2a1.7 1.7 0 0 1-2.4-2.4l7.5-7.5"/></g></symbol>
+<symbol id="i-db" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4.4 0 8 1.3 8 3s-3.6 3-8 3-8-1.3-8-3 3.6-3 8-3zM4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></g></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.4 8-8 9-4.6-1-8-4-8-9V6zM9 12l2 2 4-4"/></g></symbol>
+</defs></svg>
+
+<header><div class="w"><a class="logo" href="#" aria-label="Finanças ERP"><i>F</i>Finanças ERP</a>
+<nav><a href="#telas">Telas</a><a href="#recursos">Recursos</a><a href="#como">Como funciona</a><a href="#faq">Dúvidas</a><a class="cta" href="#comprar">Comprar</a></nav></div></header>
+
 <main>
-<div class="w hero"><h1>Controle financeiro completo para sua vida pessoal e sua empresa</h1>
-<p>Lançamentos, cartões com fatura, contas, orçamento, relatórios e índices de saúde financeira. Seus dados ficam no <b>seu</b> Google Drive.</p>
-<a class="btn" href="#comprar">Quero o Finanças ERP</a></div>
+<div class="w hero">
+  <div class="selo"><b>Novo</b> Pagamento único, sem mensalidade</div>
+  <h1>Controle financeiro completo para <span class="mk">você</span> e para a sua <span class="mk">empresa</span></h1>
+  <p class="sub">Lançamentos, cartões com fatura, contas, orçamento, relatórios e índices de saúde financeira. Seus dados ficam no <b>seu</b> Google Drive.</p>
+  <div class="acoes"><a class="btn" href="#comprar">Quero o Finanças ERP</a><a class="btn sec" href="#telas">Ver as telas</a></div>
+  <div class="chips"><span><svg><use href="#i-ok"/></svg>CPF e CNPJ no mesmo sistema</span><span><svg><use href="#i-ok"/></svg>Funciona no celular e no computador</span><span><svg><use href="#i-ok"/></svg>Backup automático no seu Drive</span></div>
+  <div class="vitrine"><div class="frame"><div class="bar"><i></i><i></i><i></i><span>Finanças ERP</span></div>
+    <img src="img/inicio.png" width="1366" height="763" alt="Tela inicial com saldo das contas, resultado do mês, avisos e próximos vencimentos"></div></div>
+</div>
 
-<section id="telas"><div class="w"><h2>Conheça o sistema</h2><div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
-<figure><img src="img/painel.png" alt="Tela inicial com saldo, avisos e próximos vencimentos" loading="lazy"><figcaption>Tela inicial</figcaption></figure>
-<figure><img src="img/lancamentos.png" alt="Extrato com filtros por mês e status" loading="lazy"><figcaption>Extrato</figcaption></figure>
-<figure><img src="img/dashboard.png" alt="Dashboard com gráficos de receitas e despesas" loading="lazy"><figcaption>Dashboard</figcaption></figure>
+<section id="telas"><div class="w">
+  <div class="tit rv"><span class="etq">Conheça o sistema</span><h2>Tudo o que você precisa, em telas simples</h2><p>Escolha uma tela para ver como ela funciona por dentro.</p></div>
+  <div class="abas rv" role="tablist" aria-label="Telas do sistema">
+    <button role="tab" aria-selected="true" data-src="img/lancar.png" data-alt="Tela de novo lançamento com valor, data, categoria, conta e comprovante" data-t="Lançar" data-d="Registre despesas, receitas, transferências e pagamento de fatura, com parcelamento e comprovante.">Lançar</button>
+    <button role="tab" aria-selected="false" data-src="img/extrato.png" data-alt="Extrato com filtros por mês, situação e busca" data-t="Extrato" data-d="Todos os lançamentos com filtros por mês, situação, conta, cartão e categoria.">Extrato</button>
+    <button role="tab" aria-selected="false" data-src="img/cartoes.png" data-alt="Cartões e faturas com limite usado e próximas faturas" data-t="Cartões e faturas" data-d="A compra cai na fatura certa, com limite usado, próximas faturas e gastos por categoria.">Cartões</button>
+    <button role="tab" aria-selected="false" data-src="img/dashboard.png" data-alt="Dashboard com gráficos de receitas, despesas e evolução do saldo" data-t="Dashboard" data-d="Gráficos de receitas e despesas, evolução do saldo e para onde o dinheiro foi.">Dashboard</button>
+    <button role="tab" aria-selected="false" data-src="img/indices.png" data-alt="Ficha de índices com taxa de poupança, reserva e uso do limite" data-t="Ficha de índices" data-d="Poupança, reserva, uso do limite e outros indicadores, com metas que você mesmo edita.">Índices</button>
+  </div>
+  <div class="frame rv" style="max-width:1040px;margin:0 auto"><div class="bar"><i></i><i></i><i></i><span>Finanças ERP</span></div>
+    <img id="shot" src="img/lancar.png" width="1366" height="763" loading="lazy" alt="Tela de novo lançamento com valor, data, categoria, conta e comprovante"></div>
+  <div class="legenda" aria-live="polite"><b id="lt">Lançar</b><span id="ld">Registre despesas, receitas, transferências e pagamento de fatura, com parcelamento e comprovante.</span></div>
+</div></section>
+
+<section id="recursos"><div class="w">
+  <div class="tit rv"><span class="etq">Recursos</span><h2>O que você ganha</h2><p>Do dia a dia da casa ao caixa da empresa.</p></div>
+  <div class="grid">
+    <div class="card feat rv" style="--c:#6366F1"><span class="ic"><svg><use href="#i-emp"/></svg></span><h3>CPF e CNPJ juntos</h3><p>Separe o que é pessoal (PF) e da empresa (PJ) no mesmo sistema.</p></div>
+    <div class="card feat rv" style="--c:#F59E0B"><span class="ic"><svg><use href="#i-card"/></svg></span><h3>Cartões e parcelas</h3><p>A compra cai na fatura certa, com fechamento, vencimento e parcelamento automáticos.</p></div>
+    <div class="card feat rv" style="--c:#0EA5E9"><span class="ic"><svg><use href="#i-transf"/></svg></span><h3>Contas e transferências</h3><p>Saldos, pró-labore, distribuição de lucros e pagamento de fatura.</p></div>
+    <div class="card feat rv" style="--c:#E11D48"><span class="ic"><svg><use href="#i-tag"/></svg></span><h3>Orçamento por categoria</h3><p>Defina limites e acompanhe o quanto já gastou em cada categoria.</p></div>
+    <div class="card feat rv" style="--c:#F97316"><span class="ic"><svg><use href="#i-gauge"/></svg></span><h3>Índices financeiros</h3><p>Poupança, reserva, endividamento e outros indicadores com metas editáveis.</p></div>
+    <div class="card feat rv" style="--c:#8B5CF6"><span class="ic"><svg><use href="#i-clip"/></svg></span><h3>Comprovantes e importação</h3><p>Anexe fotos ou PDFs e importe planilhas CSV/XLSX.</p></div>
+    <div class="card feat rv" style="--c:#14B8A6"><span class="ic"><svg><use href="#i-db"/></svg></span><h3>Backup automático</h3><p>Cópias semanais no seu Drive, sem você precisar lembrar.</p></div>
+    <div class="card feat rv" style="--c:#10B981"><span class="ic"><svg><use href="#i-shield"/></svg></span><h3>Privacidade</h3><p>Nós não temos acesso à sua planilha: ela é criada na sua conta Google.</p></div>
+  </div>
+</div></section>
+
+<section style="padding-top:20px"><div class="w"><div class="escuro rv">
+  <h2>Seus dados ficam com você, e só com você</h2>
+  <p>O Finanças ERP roda na sua conta Google. Nada do que você lança passa por servidores nossos.</p>
+  <ul><li><svg><use href="#i-ok"/></svg>Lançamentos, contas, cartões e comprovantes são gravados no seu Google Drive</li>
+  <li><svg><use href="#i-ok"/></svg>O fornecedor não tem acesso, nem consegue ler ou apagar seus dados</li>
+  <li><svg><use href="#i-ok"/></svg>Para apagar tudo, basta excluir os arquivos do sistema no seu Drive</li></ul>
 </div></div></section>
 
-<section id="recursos"><div class="w"><h2>O que você ganha</h2><div class="grid">
-<div class="card"><h3>CPF e CNPJ juntos</h3><p>Separe o que é pessoal (PF) e da empresa (PJ) no mesmo sistema.</p></div>
-<div class="card"><h3>Cartões e parcelas</h3><p>A compra cai na fatura certa, com fechamento, vencimento e parcelamento automáticos.</p></div>
-<div class="card"><h3>Contas e transferências</h3><p>Saldos, pró-labore, distribuição de lucros e pagamento de fatura.</p></div>
-<div class="card"><h3>Orçamento por categoria</h3><p>Defina limites e acompanhe o quanto já gastou em cada categoria.</p></div>
-<div class="card"><h3>Índices financeiros</h3><p>Poupança, reserva, endividamento e outros indicadores com metas editáveis.</p></div>
-<div class="card"><h3>Comprovantes e importação</h3><p>Anexe fotos ou PDFs e importe planilhas CSV/XLSX.</p></div>
-<div class="card"><h3>Backup automático</h3><p>Cópias semanais no seu Drive, sem você precisar lembrar.</p></div>
-<div class="card"><h3>Privacidade</h3><p>Nós não temos acesso à sua planilha: ela é criada na sua conta Google.</p></div>
-</div></div></section>
+<section id="como"><div class="w">
+  <div class="tit rv"><span class="etq">Passo a passo</span><h2>Como funciona</h2><p>Da compra ao primeiro lançamento em poucos minutos.</p></div>
+  <div class="grid passos">
+    <div class="card passo rv"><span class="n">1</span><h3>Compre</h3><p>Pague com Pix ou cartão (até 12x) pelo Mercado Pago.</p></div>
+    <div class="card passo rv"><span class="n">2</span><h3>Receba a chave</h3><p>Após a aprovação, a chave de ativação chega no seu e-mail.</p></div>
+    <div class="card passo rv"><span class="n">3</span><h3>Ative e use</h3><p>Entre com o Gmail da compra, informe a chave e comece.</p></div>
+  </div>
+</div></section>
 
-<section><div class="w"><h2>Como funciona</h2><div class="grid">
-<div class="card"><span class="num">1</span><h3>Compre</h3><p>Pague com Pix ou cartão (até 12x) pelo Mercado Pago.</p></div>
-<div class="card"><span class="num">2</span><h3>Receba a chave</h3><p>Após a aprovação, a chave de ativação chega no seu e-mail.</p></div>
-<div class="card"><span class="num">3</span><h3>Ative e use</h3><p>Entre com o Gmail da compra, informe a chave e comece.</p></div>
-</div></div></section>
+<section id="comprar"><div class="w">
+  <div class="tit rv"><span class="etq">Preço</span><h2>Pagamento único</h2><p>Pague uma vez e use sem se preocupar com mensalidade.</p></div>
+  <div class="moldura rv"><div class="preco"><span class="de">Licença permanente</span><div class="v">R$ 150,00</div><p class="mut">Sem mensalidade</p>
+  <ul><li><svg><use href="#i-ok"/></svg>Acesso ao sistema completo</li><li><svg><use href="#i-ok"/></svg>Atualizações da versão</li><li><svg><use href="#i-ok"/></svg>Ativação vinculada ao seu Gmail</li></ul>
+  <form id="f"><input id="nome" placeholder="Seu nome" required autocomplete="name">
+  <input id="email" type="email" placeholder="Seu Gmail (o mesmo que usará no sistema)" required autocomplete="email">
+  <label class="aceite"><input id="ok" type="checkbox" required><span>Li e aceito os <a href="termos.html" target="_blank">Termos</a> e a <a href="privacidade.html" target="_blank">Privacidade</a>.</span></label>
+  <button class="btn" id="b" style="width:100%">Pagar com Mercado Pago</button><div id="msg" role="status"></div></form></div></div>
+</div></section>
 
-<section id="comprar"><div class="w"><h2>Pagamento único</h2>
-<div class="card preco"><div class="v">R$ 150,00</div><p class="mut" style="color:var(--mut)">Licença permanente, sem mensalidade</p>
-<ul><li>Acesso ao sistema completo</li><li>Atualizações da versão</li><li>Ativação vinculada ao seu Gmail</li></ul>
-<form id="f"><input id="nome" placeholder="Seu nome" required autocomplete="name">
-<input id="email" type="email" placeholder="Seu Gmail (o mesmo que usará no sistema)" required autocomplete="email">
-<label style="display:flex;gap:8px;text-align:left;font-size:13px;color:var(--mut);margin:8px 0"><input id="ok" type="checkbox" required style="width:auto;margin:3px 0">Li e aceito os <a href="termos.html" target="_blank">Termos</a> e a <a href="privacidade.html" target="_blank">Privacidade</a>.</label>
-<button class="btn" id="b" style="width:100%">Pagar com Mercado Pago</button><div id="msg" role="status"></div></form></div></div></section>
+<section id="faq"><div class="w faq">
+  <div class="tit rv"><span class="etq">Dúvidas</span><h2>Dúvidas frequentes</h2></div>
+  <details class="rv"><summary>Preciso pagar mensalidade?</summary><p>Não. O pagamento é único.</p></details>
+  <details class="rv"><summary>Onde ficam meus dados?</summary><p>Em uma planilha criada no seu próprio Google Drive. Só você tem acesso.</p></details>
+  <details class="rv"><summary>Funciona no celular?</summary><p>Sim, o sistema é adaptado para celular e computador.</p></details>
+  <details class="rv"><summary>Posso usar outro Gmail?</summary><p>A licença é vinculada ao Gmail informado na compra. Para trocar, fale com o suporte.</p></details>
+  <details class="rv"><summary>Posso pedir reembolso?</summary><p>Sim, dentro do prazo legal de 7 dias após a compra. Veja os Termos.</p></details>
+</div></section>
 
-<section id="faq"><div class="w" style="max-width:760px"><h2>Dúvidas frequentes</h2>
-<details><summary>Preciso pagar mensalidade?</summary><p>Não. O pagamento é único.</p></details>
-<details><summary>Onde ficam meus dados?</summary><p>Em uma planilha criada no seu próprio Google Drive. Só você tem acesso.</p></details>
-<details><summary>Funciona no celular?</summary><p>Sim, o sistema é adaptado para celular e computador.</p></details>
-<details><summary>Posso usar outro Gmail?</summary><p>A licença é vinculada ao Gmail informado na compra. Para trocar, fale com o suporte.</p></details>
-<details><summary>Posso pedir reembolso?</summary><p>Sim, dentro do prazo legal de 7 dias após a compra. Veja os Termos.</p></details></div></section>
+<div class="final"><div class="w"><div class="box rv"><h2>Organize suas finanças hoje mesmo</h2><p>Um pagamento, seus dados no seu Drive e o controle na palma da mão.</p><a class="btn" href="#comprar">Quero o Finanças ERP</a></div></div></div>
 </main>
 <footer><div class="w"><a href="termos.html">Termos de uso</a><a href="privacidade.html">Privacidade</a><br>Suporte: <span id="ct"></span><br>© <span id="ano"></span> Finanças ERP</div></footer>
 <script src="config.js"></script>
@@ -65,4 +117,21 @@ f.addEventListener('submit',function(e){
  .then(function(r){var u=r&&(r.init_point||r.url);if(!u)throw new Error(r&&r.mensagem||'Não foi possível criar o checkout.');location.href=u})
  .catch(function(err){m.className='erro';m.textContent=err.message;b.disabled=false;b.textContent='Pagar com Mercado Pago'});
 });
+/* abas da galeria */
+(function(){
+ var tabs=document.querySelectorAll('.abas button'),img=document.getElementById('shot'),lt=document.getElementById('lt'),ld=document.getElementById('ld');
+ tabs.forEach(function(t){t.addEventListener('click',function(){
+  tabs.forEach(function(x){x.setAttribute('aria-selected',x===t)});
+  img.style.opacity=.25;
+  var n=new Image();n.onload=function(){img.src=t.dataset.src;img.alt=t.dataset.alt;img.style.opacity=1};n.src=t.dataset.src;
+  lt.textContent=t.dataset.t;ld.textContent=t.dataset.d;
+ })});
+})();
+/* entrada suave ao rolar */
+(function(){
+ var els=document.querySelectorAll('.rv');
+ if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+ var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+ els.forEach(function(e){io.observe(e)});
+})();
 </script></body></html>
